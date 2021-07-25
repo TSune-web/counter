@@ -1,0 +1,47 @@
+:root {
+    --main-clr: rgb(245, 203, 125);
+    --sec-clr: rgb(191, 201, 255);
+    --dark-sec-clr:rgb(0, 0, 141);
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--main-clr);
+}
+
+h1,
+h2 { margin: 15px auto; }
+
+p {
+    margin: 15px auto;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px 30px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #fff;
+    outline: 2px solid var(--dark-sec-clr);
+    cursor: pointer;
+}
+
+button:hover { background-color: var(--sec-clr); }
+
+button:active { outline-offset: -7px; }
