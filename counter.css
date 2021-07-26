@@ -4,11 +4,14 @@
     --dark-sec-clr:rgb(0, 0, 141);
 }
 
-body {
+* {
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
-    height: 100vh;
+}
+
+body {   
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,12 +20,20 @@ body {
     background-color: var(--main-clr);
 }
 
-h1,
-h2 { margin: 15px auto; }
+h1 {
+    background-color: #fff;
+    color: var(--dark-sec-clr);
+    font-size: 48px;
+    padding: 15px;
+    margin: 50px;
+    box-shadow: 5px 5px 10px 3px var(--dark-sec-clr);
+    border-radius: 15px;
+}
 
-p {
-    margin: 15px auto;
-    font-size: 20px;
+h2 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 50px;
 }
 
 .container {
@@ -45,3 +56,8 @@ button {
 button:hover { background-color: var(--sec-clr); }
 
 button:active { outline-offset: -7px; }
+
+p {
+    margin: 50px auto;
+    font-size: 25px;
+}
